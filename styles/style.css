@@ -1,0 +1,80 @@
+.hind-madurai-light {
+  font-family: "Hind Madurai", sans-serif;
+}
+/* shared style hare  */
+.display{
+    display: flex;
+}
+.imageStich{
+    width: 100%;
+}
+.border-black{
+    border-radius: 10px;
+}
+.nav-right-bars{
+    width: 123px;
+}
+.nav-right-bg{
+    background-color:rgba(65, 255, 107, 0.1);
+    border-radius:50px;
+}
+
+/* navbar style starts hare  */
+.navbar-parent{
+    max-width: 1920px;
+    height: 100px;
+    justify-content: space-between;
+}
+.left-nav-div{
+    max-width: 196px;
+    max-height: 50px;
+    margin-left: 60px;
+    margin-top: 24px;
+    align-items: center;
+}
+.left-nav-img{
+    max-width: 50px;
+    max-height: 50px;
+}
+.left-nav-title{
+    margin-left: 10px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: rgba(0, 103, 71, 1);
+}
+.right-nav-div{
+    width: 397px;
+    max-height: 50px;
+    margin-right: 60px;
+    margin-top: 24px;
+    justify-content: space-between;
+}
+.heart-img{
+    max-width: 30px;
+    max-height: 30px;
+}
+.star-coin-img{
+    max-width: 24px;
+    max-height: 24px;
+}
+.right-nav-heart-div,.right-nav-coin-div,.right-nav-copy-button{
+    align-items: center;
+    justify-content: center;
+}
+.right-nav-copy-button{
+    width: 127px;
+    background-color: #00A63E;
+    border-radius: 50px;
+    border: none;
+}
+
+/* banner section starts hare */
+
+.my-gradient {
+  background: linear-gradient(
+    to right,
+    #013223 0%,
+    #006747 50%,
+    #013223 100%
+  );
+}

@@ -24,6 +24,7 @@
     max-width: 1920px;
     height: 100px;
     justify-content: space-between;
+    margin: 0 auto;
 }
 .left-nav-div{
     max-width: 196px;
@@ -77,4 +78,23 @@
     #006747 50%,
     #013223 100%
   );
+}
+.banner-div{
+    max-width: 1920px;
+    height: 240px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.banner-logo-div{
+    max-width: 92px;
+    margin: 0 auto;
+}
+.banner-logo{
+    max-width: 92px;
+    margin-top: 21px;
+}
+.banner-contant{
+    color: white;
+    margin-top: 77px;
+    text-align: center;
 }

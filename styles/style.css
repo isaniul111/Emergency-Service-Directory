@@ -65,11 +65,15 @@
     align-items: center;
     justify-content: center;
 }
+.copy-button{
+    max-width: 270px;
+}
 .right-nav-copy-button{
     width: 127px;
     background-color: #00A63E;
     border-radius: 50px;
     border: none;
+    color: white;
 }
 
 /* banner section starts hare */
@@ -103,70 +107,126 @@
 }
 
 /* main card section style starts hare */
+.bg-color{
+    background-color:rgba(65, 255, 107, 0.1);
+}
+.card-logo{
+    max-width: 55px;
+    border-radius: 8px;
+    background-color: rgba(255, 227, 226, 1);
+}
 .main{
     max-width: 1800px;
     height: 1140px;
-    border: 1px solid sandybrown;
     margin: 0 auto;
-    margin-bottom: 86px;
+    margin-bottom: 150px;
+    gap: 30px;
+
 }
 .left-main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    width: 1370px;
+    gap: 25px;
+    max-width: 1370px;
     height: 1140px;
-}
-.right-main{
-    width: 400px;
-    height: 1140px;
+    margin-top: 48px;
+    margin-left:30px;
 }
 .left-main-grid{
-    width: 436px;
-    height: 360px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 1);
+    width:340px;
+    height: 340px;
+    padding-top: 28px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.3);
 }
-.img-logo{
-    width: 372px;
-    height: 60px;
-    margin: 0 auto;
-    margin-top: 32px;
-    align-items: center;
-    justify-content: space-between;
+.fix-size{
+    font-size: 1rem;
+    margin-bottom: 0px;
 }
-.heart-logo i {
-  font-size: 20px; 
-  color: #006747;
+.fix-size2{
+    margin: 0;
 }
-.main-others{
-    width: 372px;
-    height: 220px;
-    margin: 0 auto;
-    margin-top: 16px;
-}
-.copy-button{
+.copy-button2{
     height: 40px;
-    width: 372px;
+    max-width:276px;
 }
 .copy-btn-inside,call-btn-inside{
-    width: 182px;
+    width: 122px;
     height: 40px;
-    margin-left: 7px;
 }
 .card-header-title{
-    margin-top: 0px;
+    margin-top:10px;
+    font-size:1.5rem;
+    font-weight: 700;
+}
+.card-header-2{
+    font-size: 2rem;
+    color: rgba(17, 17, 17, 1);
+}
+.card-paragra{
+    font-size: 1.12rem;
+    color: rgba(92, 92, 92, 1);
+    margin-top: 2px;
+}
+.card-small-title{
+    color: rgba(92, 92, 92, 1);
+    font-size: 1.12rem;
 }
 .call-btn-inside{
-    margin-left: 8px;
+    margin-left:8px;
 }
 .card-btn{
-    padding: 10.5px 61.3px 10.5px 83.2px;
+    padding: 10.5px 40px 10.5px 60px;
     border-radius: 8px;
     border: none;
     color: white;
 }
+.card-call-btn{
+    margin-left:25px;
+}
 .copy-btn{
    color: rgba(92, 92, 92, 1);
+   margin-right: 8px;
+   border: rgba(255, 255, 255, 1);
+}
+.img-logo,.main-others{
+    max-width: 300px;
+    height: 60px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.heart-logo i{
+    font-size: 1.5rem;
+    color: #006747;
+}
+.heart-logo{
+    margin-right: 30px;
+}
+
+/* right side style starts hare  */
+
+.right-main{
+    margin-top: 48px;
+     background-color: white;
+}
+.call-history{
+    width: 300px;
+    height: 52px;
+    justify-content: space-between;
+    margin: 0 auto;  
+    margin: 0 8px; 
+    margin-top: 24px; 
+}
+.history-call{
+    font-size: 1.2rem;
+    font-weight:600;
+}
+.history-btn{
+    padding: 14px 36px;
+    border-radius:50px;
+    border: none;
+    background-color: #00A63E;
+    color: white;
 }

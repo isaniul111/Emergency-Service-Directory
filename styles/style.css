@@ -56,10 +56,12 @@
 .heart-img{
     max-width: 30px;
     max-height: 30px;
+    margin-left: 8px;
 }
 .star-coin-img{
     max-width: 24px;
     max-height: 24px;
+    margin-left: 8px;
 }
 .right-nav-heart-div,.right-nav-coin-div,.right-nav-copy-button{
     align-items: center;
@@ -100,15 +102,26 @@
     max-width: 92px;
     margin-top: 21px;
 }
+.banner-title{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
 .banner-contant{
     color: white;
-    margin-top: 77px;
+    margin-top:10px;
     text-align: center;
 }
 
 /* main card section style starts hare */
 .bg-color{
     background-color:rgba(65, 255, 107, 0.1);
+    max-width: 1900px;
+    max-height:1200px;
+    margin: 0 auto;
 }
 .card-logo{
     max-width: 55px;
@@ -147,14 +160,6 @@
 .fix-size2{
     margin: 0;
 }
-.copy-button2{
-    height: 40px;
-    max-width:276px;
-}
-.copy-btn-inside,call-btn-inside{
-    width: 122px;
-    height: 40px;
-}
 .card-header-title{
     margin-top:10px;
     font-size:1.5rem;
@@ -163,6 +168,7 @@
 .card-header-2{
     font-size: 2rem;
     color: rgba(17, 17, 17, 1);
+    margin: 0px;
 }
 .card-paragra{
     font-size: 1.12rem;
@@ -172,24 +178,38 @@
 .card-small-title{
     color: rgba(92, 92, 92, 1);
     font-size: 1.12rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color:rgba(242, 242, 242, 1);
+    border-radius: 50px;
+    display: inline-block;
+     padding: 5px 10px;
 }
-.call-btn-inside{
-    margin-left:8px;
+.copy-button2{
+    height: 50px;
+    max-width:276px;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .card-btn{
-    padding: 10.5px 40px 10.5px 60px;
+    padding: 10.5px 20px 10.5px 20px;
     border-radius: 8px;
     border: none;
     color: white;
 }
-.card-call-btn{
-    margin-left:25px;
+.card-btn{
+    padding: 15px 40px 15px 50px;
+    border-radius: 8px;
+    border: none;
+    color: white;
 }
 .copy-btn{
    color: rgba(92, 92, 92, 1);
    margin-right: 8px;
    border: rgba(255, 255, 255, 1);
-}
+} 
 .img-logo,.main-others{
     max-width: 300px;
     height: 60px;
@@ -210,6 +230,11 @@
 .right-main{
     margin-top: 48px;
      background-color: white;
+     box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.3);
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+     border-radius: 10px;
+     height: 1150px;
+
 }
 .call-history{
     width: 300px;
@@ -217,7 +242,9 @@
     justify-content: space-between;
     margin: 0 auto;  
     margin: 0 8px; 
-    margin-top: 24px; 
+    margin-top: 24px;
+    margin-left:20px; 
+    align-items: center;
 }
 .history-call{
     font-size: 1.2rem;
@@ -229,4 +256,44 @@
     border: none;
     background-color: #00A63E;
     color: white;
+}
+/* responsive for smart phone */
+@media only screen and (max-width:430px) {
+    .navbar-parent{
+        width: 530px;
+    }
+    .left-nav-div{
+        margin-left: 0px;
+    }
+    .right-nav-div{
+        margin-right: 10px;
+    }
+    .banner-div{
+        width: 530px;
+        height: 280px;
+    }
+    .main{
+        flex-direction:column-reverse;
+        margin-top: 200px;
+        justify-content: center;
+        margin-top: 150px;
+        height:px;
+    }
+    .right-main{
+        margin-left: 15px;
+        margin-top: 0px;
+        width: 490px;
+    }
+    .left-main{
+            grid-template-columns: repeat(1, 1fr);
+            margin-left: 100px;
+    }
+    .call-history{
+        width: 450px;
+        margin-bottom: 20px;
+    }
+    .bg-color{
+        width: 530px;
+        background-color: rgba(0, 0, 0,0);
+    }
 }

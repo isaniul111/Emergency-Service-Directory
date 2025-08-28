@@ -28,12 +28,30 @@ document.querySelectorAll('.card-call-btn').forEach(function(btn){
             let number = callTo.querySelector('.card-header-2').innerText;
             let newStar=starAvailable-20;
             document.getElementById('star-available').innerText=newStar;
-            alert(`📞Calling ${title}:${number}`);
+            alert(`📞Calling ${title}:${number},,,`);
+             // get current time
+            let now = new Date();
+            let time= now.toLocaleTimeString();
+
+            // create new history block
+            let historyDiv = document.createElement("div");
+            historyDiv.classList.add("history-items");
+            historyDiv.innerHTML=`
+                <div class="history-items-divs">
+                    <p>${title}</p>
+                    <h4>${number}</h4>
+                </div>
+                <div class="history-items-divs">
+                    <h3>${time}</h3>
+                </div>
+            `;
+            document.getElementById('history-items').appendChild(historyDiv);
         }
         else{
             alert("Insufficient coins. You need at least 20 coins to call.")
         }
     });     
 });
+
 
 

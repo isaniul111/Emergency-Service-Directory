@@ -52,6 +52,10 @@ document.querySelectorAll('.card-call-btn').forEach(function(btn){
         }
     });     
 });
+document.getElementById("clear-history").addEventListener("click", function(){
+  const historyContainer = document.getElementById("history-items");
+  historyContainer.innerHTML = "";
+});
 
 
 

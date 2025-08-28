@@ -285,7 +285,7 @@
 }
 .history-items-divs h3{
     color:rgba(17, 17, 17, 1);
-    font-size: 1.125rem;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 
@@ -311,21 +311,18 @@
         margin-top: 10px;
     }
     .main{
-       border: 1px solid brown;
        width: 430px;
        margin: 0px;
        height: 5000px;
        flex-direction: column;
     }
     .right-main{
-        border: 1px solid black;
         height: 800px;
         width: 390px;
         margin: 0 auto;
     }
     .left-main{
         grid-template-columns: repeat(1, 1fr);
-        border: 1px solid blue;
         height: 3900px;
         width: 350px;
     }

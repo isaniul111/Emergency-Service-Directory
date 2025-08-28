@@ -1,6 +1,11 @@
 .hind-madurai-light {
   font-family: "Hind Madurai", sans-serif;
 }
+.body {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
 /* shared style hare  */
 .display{
     display: flex;
@@ -313,7 +318,7 @@
     .main{
        width: 430px;
        margin: 0px;
-       height: 5000px;
+       height: 4800px;
        flex-direction: column;
     }
     .right-main{
@@ -325,10 +330,15 @@
         grid-template-columns: repeat(1, 1fr);
         height: 3900px;
         width: 350px;
+        margin: 0 auto;
+        margin-top: 20px;
     }
     .call-history{
         width: 370px;
         margin-bottom: 20px;
+    }
+    .history-btn{
+        margin-right: 20px;
     }
     .bg-color{
         width: 430px;

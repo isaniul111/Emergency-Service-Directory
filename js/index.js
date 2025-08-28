@@ -16,6 +16,16 @@ document.querySelectorAll('.copy-btn').forEach(function(btn){
     navigator.clipboard.writeText(number);
     });
 });
+document.querySelectorAll('.copy-btn').forEach(function(event){
+    event.addEventListener('click',function(){
+    let copyOld=parseInt(document.getElementById('copy-btn-navbar').innerText);
+    copyOld++;
+    let callTo=event.closest('.left-main-grid');
+    let number = callTo.querySelector('.card-header-2').innerText;
+    alert(`Number copied:${number}`)
+    document.getElementById('copy-btn-navbar').innerText =copyOld;
+    });
+});
 
 // calling function starts hare
 
@@ -29,11 +39,9 @@ document.querySelectorAll('.card-call-btn').forEach(function(btn){
             let newStar=starAvailable-20;
             document.getElementById('star-available').innerText=newStar;
             alert(`📞Calling ${title}:${number},,,`);
-             // get current time
+
             let now = new Date();
             let time= now.toLocaleTimeString();
-
-            // create new history block
             let historyDiv = document.createElement("div");
             historyDiv.classList.add("history-items");
             historyDiv.innerHTML=`

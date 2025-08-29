@@ -312,6 +312,7 @@ html, body {
     }
     .right-nav-div{
         margin-right: 10px;
+        width: calc(100% - 33px);
     }
     .banner-div{
         width: 100%;
@@ -335,7 +336,7 @@ html, body {
         width: calc(100% - 40px);
         margin: 0 auto;
         margin-top: 20px;
-        margin-left: 50px;
+        margin-left:calc(100% - 380px);
     }
     .call-history{
         width: calc(100% - 60px);
